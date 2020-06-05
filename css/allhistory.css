@@ -4,7 +4,8 @@
 }
 body{
     font-size: 0px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: scroll;
 }
 b{
     font-size: 20px;
@@ -14,6 +15,20 @@ p{
     font-size: 14px;
     color: white;
 }
+  /*
+* 经过修改后的clearfix是一个多功能的
+*     既可以解决高度塌陷，又可以确保父元素和子元素的垂直外边距不会重叠
+*/
+.clearfix:before,
+.clearfix:after{
+     content: "";
+    display: table;
+    clear: both;
+}
+.clearfix{
+     zoom: 1;
+     }
+     
 .header{
    overflow: hidden;
    padding-bottom: 10px;
@@ -180,19 +195,73 @@ nav li{
     background-image: url(../picture/ia_100000002937.jpeg);
     background-size: cover;
     margin-left: 50px;
+    background-repeat: no-repeat;
 }
 .xiabuluo{
     background-image: url(../picture/ia_100000002.png);
     background-size: cover;
     margin-left: 50px;
+    background-repeat: no-repeat;
 }
 .gunyuzhishui{
     background-image: url(../picture/ia_100000003.jpeg);
     background-size: cover;
     margin-left: 60px;
+    background-repeat: no-repeat;
 }
-table td{
+#shijianzhou td{
     width: 85px;
     height: 6px;
     border-radius: 2px;
+    font-size: 12px;
+    color: gray;
+}
+.guojia{
+    width: 70px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#guojiatable td{
+    height: 80px;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    padding-left: 15px;
+}
+.recommend-toggle {
+    width: 60px;
+    height: 48px;
+    background: #333;
+    border-radius: 2px;
+    color: hsla(0, 0%, 100%, .6);
+    font-size: 12px;
+    line-height: 48px;
+    cursor: pointer;
+    vertical-align: top;
+}
+.guanxitupu{
+    width:calc(50% - 60px);
+    height: 160px;
+    border-radius: 4px;
+    display: inline-block;
+    background-size: cover;
+    margin-left: 30px;
+    background-repeat: round;
+    vertical-align: top;
+}
+a.btn {
+    background: #ff7963;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    text-align: center;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    min-width: 80px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
 }

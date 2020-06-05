@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 0px;
+    overflow: auto;
+}
+b{
+    font-size: 20px;
+    color: white;
+}
+p{
+    font-size: 14px;
+    color: white;
+}
+.header{
+   overflow: hidden;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #f7f7f7;
+}
+.logo{
+    width: 40px;
+    height: 25px;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.header-search-box{
+    display: inline-block;
+    height: 35px;
+    position: relative;
+    transition: all .3s;
+    line-height: 35px;
+    vertical-align: top;
+    margin-left: 15px;
+    margin-top: 12px;
+    box-shadow: 0 0 2px 0 #848484;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+.searchtype{
+    display: inline-block;
+    width: 56px;
+    height: 100%;
+    vertical-align: top;
+    font-size: 14px;
+    text-align: center;
+}
+.searchtype select{
+    border: 0;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+.searchinput{
+    display: inline-block;
+    height: 100%;
+    vertical-align:top ;
+}
+.searchinput input{
+    border: 0;
+    outline: none;
+    height: 100%;
+    width: 365px;
+}
+.searchphoto{
+    display:inline-block;
+    height: 20px;
+    width: 22px;
+    border-right:1px solid #d8d8d8;
+    vertical-align: top;
+    padding:7.5px 7.5px ;
+}
+.searchfang{
+    display: inline-block;
+    height: 22px;
+    width: 24px;
+    vertical-align: top;
+    padding: 7.5px 15px;
+}
+a{
+    text-decoration: none;
+    font-size:14px;
+    color: black;
+}
+.line{
+    height: 14px;
+    width: 1px;
+    margin-left: 20px;
+    border-right: 1px solid #c6c6c6;
+    margin-top: 5px;
+}
+nav li{
+    float: left;
+    margin-left: 18px;
+    line-height: 24px;
+}
+.liimg{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+#login{
+    vertical-align: middle;
+    padding: 4px 10px;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    background-color:#FF7963 ;
+    color: white;
+}
+.classul li{
+    float: left;
+    margin-left: 18px;
+    line-height: 24px;
+}
+.classul span{
+    font-size: 16px;
+    padding-left: 12px;
+    vertical-align: middle;
+}
+.classspan{
+    color: #C1C1C1;
+}
+/*图片变灰*/
+.gray { 
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);	
+    filter: gray;
+}
+.period-desc{
+    width: 250px;
+    height: 255px;
+    display: inline-block;
+    background-color:rgba(237, 95, 0, 0.5);/* IE9、标准浏览器、IE6和部分IE7内核的浏览器会读懂 */
+    padding-left: 30px;
+    padding-top: 35px;
+    margin-left: 10px;
+    margin-top: 5px;
+    vertical-align: top;
+}
+
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+    .period-desc{
+        width: 250px;
+        height: 255px;
+        display: inline-block;
+        padding-left: 30px;
+        padding-top: 35px;
+        vertical-align: top;
+        filter:Alpha(opacity=50);/* 只支持IE6、7、8、9 */
+        position:static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+        zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+    }
+    .period-desc p{
+        position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值，保证字体颜色不透明 */
+    }
+}
+.openmulu{
+    background-color:rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    width: 160px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+.openmulu:hover{
+    background-color:rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+.sanxingdui{
+    background-image: url(../picture/ia_100000002937.jpeg);
+    background-size: cover;
+    margin-left: 50px;
+}
+.xiabuluo{
+    background-image: url(../picture/ia_100000002.png);
+    background-size: cover;
+    margin-left: 50px;
+}
+.gunyuzhishui{
+    background-image: url(../picture/ia_100000003.jpeg);
+    background-size: cover;
+    margin-left: 60px;
+}
+table td{
+    width: 85px;
+    height: 6px;
+    border-radius: 2px;
+}

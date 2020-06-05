@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bfc</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 0px;
+        }
+
+        .box1 {
+            width: 460px;
+            height: 38px;
+            background-color: cornflowerblue;
+            overflow: hidden;
+            zoom: 1;
+        }
+
+        .box2 {
+            width: 80px;
+            height: 100%;
+            background-color: brown;
+            display: inline-block;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 100%;
+            background-color: coral;
+            display: inline-block;
+        }
+
+        .box4 {
+            width: 40px;
+            height: 100%;
+            background-color: crimson;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        v .box5 {
+            width: 40px;
+            height: 100%;
+            background-color: darkgoldenrod;
+            display: inline-block;
+        }
+
+.header-search-box {
+            display: inline-block;
+            margin-top: 13px;
+            margin-left: 15px;
+            box-shadow: 0 0 2px 0 #848484;
+            border-radius: 2px;
+            height: 38px;
+            width: 300px;
+            position: relative;
+            transition: all .3s;
+            border: 1px solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2 "></div>
+        <div class="box3"></div>
+        <div class="box4">
+            <img src="../picture/ia_100000182.png" alt="">
+        </div>
+        <div class="box5">
+            <img src="../picture/fangdajing.svg" alt="">
+        </div>
+    </div>
+
+    <div class="header-search-box"></div>
+    <div>
+        <img src="../picture/5linghua.svg" alt="">
+    </div>
+</body>
+
+</html>
